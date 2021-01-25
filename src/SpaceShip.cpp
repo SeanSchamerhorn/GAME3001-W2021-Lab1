@@ -15,7 +15,7 @@ SpaceShip::SpaceShip()
 	getRigidBody()->acceleration = glm::vec2(0.0f, 0.0f);
 	getRigidBody()->isColliding = false;
 	setType(SPACE_SHIP);
-	setMaxSpeed(10.0f);
+	setMaxSpeed(5.0f);
 	setOrientation(glm::vec2(0.0f, -1.0f));
 	setRotation(0.0f);
 }
@@ -28,7 +28,7 @@ void SpaceShip::draw()
 	TextureManager::Instance()->draw("spaceship", 
 		getTransform()->position.x, getTransform()->position.y, m_rotationAngle, 255, true);
 
-	Util::DrawLine(getTransform()->position, (getTransform()->position + m_orientation * 60.0f) );
+	Util::DrawLine(getTransform()->position, (getTransform()->position + m_orientation * 200.0f) );
 }
 
 void SpaceShip::update()

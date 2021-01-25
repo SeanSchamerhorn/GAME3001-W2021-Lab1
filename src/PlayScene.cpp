@@ -24,7 +24,7 @@ void PlayScene::draw()
 	}
 
 	drawDisplayList();
-	SDL_SetRenderDrawColor(Renderer::Instance()->getRenderer(), 255, 255, 255, 255);
+	SDL_SetRenderDrawColor(Renderer::Instance()->getRenderer(), 0, 0, 0, 255);
 }
 
 void PlayScene::update()
